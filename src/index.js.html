@@ -1,0 +1,33 @@
+<script>
+var tabs = document.querySelector('paper-tabs');
+tabs.addEventListener('core-select', function() {
+    console.log("Selected: " + tabs.selected);
+});
+
+      // Prevent forms from submitting.
+      function preventFormSubmit() {
+        var forms = document.querySelectorAll('form');
+        for (var i = 0; i < forms.length; i++) {
+          forms[i].addEventListener('submit', function(event) {
+            event.preventDefault();
+          });
+        }
+      }
+      window.addEventListener('load', preventFormSubmit);
+      
+    function onFailure(error) {
+      var div = document.getElementById('error');
+      div.innerHTML = "ERROR: " + error.message;
+    }
+    
+    function updateView(data) {
+      console.log(data);
+      $('#title').val(data[0]);
+    }
+    
+    function handleFormSubmit(formObject) {
+      google.script.run
+      .withSuccessHandler(updateView).withFailureHandler(onFailure)
+      .processForm(formObject);
+    }
+</script>
