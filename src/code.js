@@ -1,10 +1,3 @@
-function doGet() {
-  return HtmlService.createTemplateFromFile('index')
-        .evaluate()
-        .setTitle('Meetup')
-        .setSandboxMode(HtmlService.SandboxMode.IFRAME);;
-}
-
 /**
  * アイドル運営などが書きがちなベタ書きのスケジュール告知文章からGoogleカレンダーに正規化したデータを取り出してフォームを埋める
  */
