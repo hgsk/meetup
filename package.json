@@ -19,7 +19,11 @@
         "test": "mocha",
         "lint": "eslint",
         "build": "browserify src/main.js -p gasify -o build/main.js",
-        "jscs": "jscs --standard=Jquery --fix --report-full src test || true"
+        "jscs": "jscs --standard=Jquery --fix --report-full src test || true",
+        "build:js": "browserify -t babelify ./src/js/App.js -d | exorcist ./src/bundle.js.map > ./src/bundle.js",
+        "watch:js" : "watchify -v -t babelify ./src/js/App.js -o \"exorcist ./src/bundle.js.map > ./src/bundle.js\" -d",
+        "release:js": "browserify -t babelify ./src/js/App.js | uglifyjs > ./dist/bundle.js"
+  }
     },
     "repository": {
         "type": "git",

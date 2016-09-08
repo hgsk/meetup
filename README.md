@@ -7,8 +7,6 @@ Simple meet-up Schedule Management with Google Apps
 
 # Install
 
-WIP
-
 ```
 gapps init
 npm install
@@ -33,3 +31,16 @@ npm test
 ```
 npm run lint
 ```
+
+# WIP Development with AltJS
+
+```
+npm run watch:js // Continuous build.
+npm run build.js // Simply build.
+npm run release // Release build. Build with no source map, compress, and minify to `dist`.
+```
+
+http://akabeko.me/blog/2015/08/dev-web-front-end-without-gulp/
+
+htmlをdistにcpする必要ある
+
