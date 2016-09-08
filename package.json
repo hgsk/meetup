@@ -4,16 +4,21 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "browserify": "^13.1.0",
+    "gasify": "^0.1.0",
     "node-google-apps-script": "^1.1.5"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
     "eslint": "^3.4.0",
     "jscodesniffer": "^2.2.2",
+    "mocha": "^3.0.2",
     "qunitjs": "^2.0.1"
   },
   "scripts": {
-    "test": "node testrunner.js",
-    "lint": "eslint"
+    "test": "mocha",
+    "lint": "eslint",
+	"build": "browserify src/main.js -p gasify -o build/main.js"
   },
   "repository": {
     "type": "git",
