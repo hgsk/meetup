@@ -9,6 +9,27 @@ Simple meet-up Schedule Management with Google Apps
 
 WIP
 
+```
 gapps init
 npm install
 npm run
+```
+
+# Deploy
+
+```
+npm run build
+gapps upload
+```
+
+# Test
+
+```
+npm test
+```
+
+# Development
+
+```
+npm run lint
+```
