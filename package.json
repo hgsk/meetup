@@ -23,7 +23,6 @@
         "build:js": "browserify -t babelify ./src/js/App.js -d | exorcist ./src/bundle.js.map > ./src/bundle.js",
         "watch:js" : "watchify -v -t babelify ./src/js/App.js -o \"exorcist ./src/bundle.js.map > ./src/bundle.js\" -d",
         "release:js": "browserify -t babelify ./src/js/App.js | uglifyjs > ./dist/bundle.js"
-  }
     },
     "repository": {
         "type": "git",
@@ -35,31 +34,4 @@
         "url": "https://github.com/hgsk/meetup/issues"
     },
     "homepage": "https://github.com/hgsk/meetup#readme"
-||||||| merged common ancestors
-  "name": "meetup",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "node-google-apps-script": "^1.1.5"
-  },
-  "devDependencies": {
-    "eslint": "^3.4.0",
-    "jscodesniffer": "^2.2.2",
-    "qunitjs": "^2.0.1"
-  },
-  "scripts": {
-    "test": "node testrunner.js",
-    "lint": "eslint"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hgsk/meetup.git"
-  },
-  "author": "hgsk",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/hgsk/meetup/issues"
-  },
-  "homepage": "https://github.com/hgsk/meetup#readme"
 }
