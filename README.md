@@ -1,4 +1,6 @@
 # meetup
+
+[![Join the chat at https://gitter.im/hgsk-meetup/Lobby](https://badges.gitter.im/hgsk-meetup/Lobby.svg)](https://gitter.im/hgsk-meetup/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Simple meet-up Schedule Management with Google Apps
 
 # Overview
